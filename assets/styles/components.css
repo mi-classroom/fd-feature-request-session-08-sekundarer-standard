@@ -140,7 +140,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
   .nutritional-values {
     text-align: center;
   }
@@ -196,7 +196,7 @@
   transition: opacity 1s 1s;
 }
 
-.menue-button[data-state=active] {
+.menue-button[data-state="active"] {
   position: sticky;
   z-index: 100;
   top: 0;
@@ -210,7 +210,7 @@
   width: 40px;
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
   .navbar {
     position: sticky;
     z-index: 1;
@@ -266,7 +266,7 @@
   text-underline-offset: 0.2rem;
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
   .intern-nav {
     position: fixed;
   }
@@ -283,9 +283,9 @@
 
 .quantity-selector-head .highlighted {
   padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
   margin: 0 0.5rem;
   background-color: var(--accent-lighter);
-  border-radius: 1rem;
   font-weight: var(--font-weight-bold);
 }
 
@@ -300,8 +300,8 @@ form input {
 form button {
   padding: var(--s) var(--xl);
   border: none;
-  background: #d9d9d9;
   border-radius: 0;
+  background: #d9d9d9;
   outline: none;
 }
 
@@ -323,7 +323,7 @@ form button {
   width: 100%;
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
   .form-container {
     display: flex;
     flex-direction: row;
@@ -441,7 +441,7 @@ form input[type="checkbox"] {
   line-height: var(--xl);
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
   .steps > li figure {
     width: auto;
     flex-direction: row;
