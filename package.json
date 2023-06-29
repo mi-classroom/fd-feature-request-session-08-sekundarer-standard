@@ -4,8 +4,8 @@
   "description": "Eine schöne Beschreibung für das gesamte Projekt sollte sich hier befinden.",
   "main": "index.js",
   "scripts": {
-    "lint": "stylelint styles/**/*.css",
-    "lint:fix": "stylelint styles/**/*.css --fix",
+    "lint": "stylelint ./assets/styles/**/*.css",
+    "lint:fix": "stylelint ./assets/styles/**/*.css --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
