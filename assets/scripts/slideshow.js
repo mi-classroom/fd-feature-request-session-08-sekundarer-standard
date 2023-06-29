@@ -39,5 +39,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     };
 
+
+
+    const url = "../assets/data/slide-show.json";
+    async function fetchSlides() {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    }
+ 
+    const renderSlides = () => {
+        fetchSlides(url).then(data => {
+
+            console.log(data);
+            slideshowElement.innerHTML = data.slides.map(item, index => {
+                return'//TODO'
+            });
+        });   
+
+    }
+
+
+
+    //renderSlides();
     slideshow(slideshowElement);
+
 });
